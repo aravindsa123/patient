@@ -19,7 +19,7 @@ function App() {
         <Route path={'/reg'}element={<Register method='post'/>}></Route>
         <Route path='/pat' element={<Patient method='post'/>}/>
         <Route path="/appointment/:id" element={<Appointment method='get'/>} />
-        <Route path="/booking" element={<Booking method='post'/>} />
+        <Route path="/booking/:id" element={<Booking method='get'/>} />
         </Routes>
         </BrowserRouter>
     </div>

@@ -12,29 +12,6 @@ const Register = () => {
     setInputs((inputs) => ({ ...inputs, [name]: value }));
   };
 
-  // const checkData = async (event) => {
-  //   event.preventDefault();
-  //   try {
-  //     const response = await axios.post("http://localhost:3004/UReg", {
-  //       fullname: inputs.fullname,
-  //       email: inputs.email,
-  //       phone: inputs.phone,
-  //       password: inputs.password,
-  //       age: inputs.age,
-  //     });
-
-  //     if (response.data.success) {
-  //       alert('Registered successful');
-  //       navigate('/pat'); 
-  //     } else {
-  //       alert('Invalid Username and Password. Please try again.');
-  //       console.log(response.data);
-  //     }
-  //   } catch (err) {
-  //     alert('Error occurred during login. Please try again.');
-  //   }
-  // };
-
   const savedata=()=>{
     const formdata=new FormData();
     formdata.append('fullname',inputs.fullname);
