@@ -17,14 +17,13 @@ function Booking() {
     // console.log("Clicked")
     console.log(inputs)
    axios.post("http://localhost:3002/booking",inputs) 
-    .then((response)=>response.json())
-    .then((data)=>{
-        alert("Record saved")
-    })
-    .catch((err)=>{
-        console.log("error")
-    })
-}
+   .then((response) => {
+    alert("Booked Successfully");
+  })
+  .catch(err => console.error("Error", err));
+};
+
+
 
 
 useEffect(() => {
